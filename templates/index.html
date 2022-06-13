@@ -4,10 +4,17 @@
         <meta charset="utf-8">
         <meta content="ugh, hi." name="description">
         <meta content="Makeup Webcam" name="title">
-        <title>Face Detection</title>
+        <link rel="icon" href="static/favicon.ico" />
+        <title>Face and Eyes Detection</title>
         <style>
          #container {
-             margin: 0px auto;
+
+               position: fixed;
+               top: 35%;
+            left: 15%;
+            margin-top: -50px;
+            margin-left: -100px;
+
 
          }
          #videoElement {
@@ -34,21 +41,44 @@
 
              border: 1px solid black;
          }
+         #title {
+            position: fixed;
+            top: 20%;
+            left: 40%;
+            margin-top: -50px;
+            margin-left: -100px;
+            color: white;
+         }
+         #made {
+            position: fixed;
+            
+            left: 42%;
+            color: rgb(255, 255, 255);
+
+         }
+         body {
+            background-image: url('../static/Real Time Video Segmentation Web Platform.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
         </style>
     </head>
     <body>
-        <h1>Live streaming</h1>
+        <h1 id="title">Real Time Video Segmentation Web Platform</h1>
         <div id="container">
             <div>
             <video autoplay="true" id="videoElement" ></video>
-                <canvas id="canvasElement" hidden="true"></canvas>
+                <canvas id="canvasElement" ></canvas>
 
                 <img id="photo">
                 
 
             </div>
+            <br><br /><br>
+            <div id="made"><h3>Made With 💙 By &nbsp; <i>Taha</i> &nbsp; & &nbsp; <i>Badr-Eddine</i></h3></div> 
         </div>
-
+        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
