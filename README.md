@@ -1,4 +1,4 @@
-### 1. Write App (Flask, TensorFlow)
+### 1. Write App (Flask)
 - The code to build, train, and save the model is in the `Haarcascades` folder.
 - Implement the app in `app.py`
 ### 2. Setup Google Cloud 
